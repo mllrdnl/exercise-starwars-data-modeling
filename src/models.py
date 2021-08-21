@@ -39,5 +39,22 @@ class People(Base):
     created = Column(String(250))
     edited = Column(String(250))
 
+class Vehicles(Base):
+    __tablename__= 'vehicles'
+    id Pk int
+    name = Column(String(250))
+    model = Column(String(250))
+    vehicle_class = Column(String(250))
+    manufacturer = Column(String(250))
+    length = Column(String(250))
+    cost_in_credits = Column(String(250))
+    crew = Column(String(250))
+    passengers = Column(String(250))
+    max_atmosphering_speed = Column(String(250))
+    cargo_capacity = Column(String(250))
+    consumables = Column(String(250))
+    created = Column(String(250))
+    edited = Column(String(250))
+
 ## Draw from SQLAlchemy base
 render_er(Base, 'diagram.png')
